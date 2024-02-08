@@ -4,6 +4,7 @@ const router= express.Router();
 
 //Rutas
 router.get('/applicants', applicantsApiController.list);
+router.get('/applicants/search', applicantsApiController.search)
 
 
 
