@@ -8,7 +8,7 @@ module.exports={
             res.json({
                 code: 200,
                 total: dataApplicants.length,
-                product: dataApplicants,
+                applicants: dataApplicants,
             })
         } catch(error){
             console.error('Error al consultar con los aspirantes', error)
