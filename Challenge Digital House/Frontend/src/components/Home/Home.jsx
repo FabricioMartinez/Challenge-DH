@@ -1,12 +1,15 @@
 import React from 'react';
-import './style.css';
+
 import './normalize.min.css'
 import './font-awesome.min.css'
 import './bootstrap.min.css'
-import ClassComponents from '../ClassComponents/Classcomponent';
-import ClassComponentProfessions from '../ClassComponents/ClassComponentProfessions';
+import './style.css';
 
-function Search(){
+import ClassComponents from '../ClassComponents/ApplicantsComponen';
+import ClassComponentProfessions from '../ClassComponents/ProfessionsComponen';
+
+
+function Home(){
     return(
 	<div className="dashboard">
 		
@@ -32,6 +35,7 @@ function Search(){
 				</button>
 			</div>
 		</section>
+
 		<header className="menu-wrap">
 			<figure className="user">
 				<div className="user-avatar">
@@ -96,11 +100,21 @@ function Search(){
 			</header>
 
 			<section className="content aspirantes">
+			<h2>Aspirantes</h2>
+                    <article className="person-boxes">
 					<ClassComponents/>
+					</article>
 			</section>
 
 			<section className="content profesiones">
+			<h2 className="mt-3">Profesiones</h2>
+				<div className="list-group shadow-sm p-3 mb-5 rounded">
+                
+					<h4 className="list-group-item list-group-item-action active text-center" aria-current="true">
+						Listado de Profesiones
+					</h4>
 				<ClassComponentProfessions/>
+				</div>
 			</section>
 			
 		</main>
@@ -109,4 +123,4 @@ function Search(){
     )
 }
 
-export default Search
+export default Home

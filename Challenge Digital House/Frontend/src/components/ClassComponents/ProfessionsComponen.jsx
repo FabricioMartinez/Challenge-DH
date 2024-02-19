@@ -9,10 +9,10 @@ class ClassComponentProfessions extends Component {
     }
 
     componentDidMount() {
-        this.apiCall("http://localhost:3001/api/professions");
+        this.fetchProfessions("http://localhost:3001/api/professions");
     }
 
-    apiCall(url) {
+    fetchProfessions(url) {
         fetch(url)
             .then((res) => res.json())
             .then((data) => {
@@ -28,18 +28,9 @@ class ClassComponentProfessions extends Component {
 
         return (
             <>
-				<h2 className="mt-3">Profesiones</h2>
-				<div className="list-group shadow-sm p-3 mb-5 rounded">
-                
-					<h4 className="list-group-item list-group-item-action active text-center"
-						aria-current="true">
-						Listado de Profesiones
-					</h4>
-                    {professions.map((profession, index) => (
-					<button key={index} type="button" className="list-group-item list-group-item-action text-center">{profession.professions}</button>
-                    ))}
-				</div>
-                
+                {professions.map((profession, index) => (
+				<button key={index} type="button" className="list-group-item list-group-item-action text-center">{profession.professions}</button>
+                ))}
             </>
         );
     }

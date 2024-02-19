@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Search from './components/Search/Search'
+import Home from './components/Home/Home'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-        <Search/>
+        <Home/>
     </>
   )
 }
