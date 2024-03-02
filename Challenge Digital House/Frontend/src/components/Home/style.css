@@ -32,7 +32,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 3em;
+  
 }
+
+
 .search-wrap .search {
   height: 40px;
 }
@@ -379,6 +382,7 @@ body {
   }
   /*añadido por cris*/
   .search-wrap{
+    font-size: 12px;
     padding: 0 1em;
   }
 }
@@ -395,6 +399,11 @@ body {
     display: flex;
     flex-direction: column;
   }  
+  /*añadido por cris*/
+  .search-wrap{
+    font-size: 12px;
+    padding: 0 1em;
+  }
 }
 @media(max-width: 542px){
   .dashboard {
@@ -420,5 +429,13 @@ body {
 
     grid-template-columns: 221px auto;
     grid-template-rows: 80px auto;
+  }
+}
+@media(max-width: 320px){
+  .user-actions{
+    font-size: 12px;
+  }
+  .search{
+    font-size: 10px;
   }
 }
