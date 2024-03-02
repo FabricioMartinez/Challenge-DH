@@ -44,7 +44,7 @@ function Menu(){
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/form">
                                 <i className="bi bi-person-vcard" style={{ fontSize: '1.2rem', color: 'cornflowerblue' }}></i>
                                 - Postulate aquí
                             </a>
