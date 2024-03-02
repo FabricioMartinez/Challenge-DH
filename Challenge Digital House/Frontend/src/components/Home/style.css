@@ -179,6 +179,18 @@ body {
 .menu-wrap nav li a.active svg circle {
   fill: #4b84fe;
 }
+
+.bi-menu-button-wide-fill{
+    background-color: fff;
+    color:#262a34;
+    font-size: 38px;
+    padding: 2px;
+    margin:10px;
+    text-align: center;
+}
+
+
+
 .content-wrap {
   grid-area: content;
   padding: 3em;
@@ -349,3 +361,56 @@ body {
 .content-wrap .person-boxes .person-box .box-actions button:hover svg circle {
   fill: #2b3a60;
 }
+
+
+@media (max-width: 390px) {
+  .content-wrap .info-boxes {
+    padding: 3em 0 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 5em;
+  }
+}
+
+
+@media(min-width: 526px){
+  .bi-menu-button-wide-fill{
+     display: none; 
+  }
+  
+}
+
+@media(max-width: 440px){
+  .menu-wrap nav section{
+    display: none;
+  }
+ 
+}
+
+@media(max-width: 440px){
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }  
+}
+@media(max-width: 542px){
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }  
+}
+
+@media(min-width: 533px){
+  .dashboard {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-gap: 0;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px auto;
+    grid-template-areas: 'menu search' 'menu content';
+  }
+}
+
+
+

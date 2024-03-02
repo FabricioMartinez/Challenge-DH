@@ -3,7 +3,7 @@ import React from "react";
 
 function Menu(){
     return(
-		<header className="menu-wrap">
+		<header className="menu-wrap" >
             <a href="/">
                 <figure className="user">
                     <div className="user-avatar">
@@ -12,12 +12,19 @@ function Menu(){
                     <figcaption>
                             Digital House
                     </figcaption>
+                    <div>
+                            <a href="#">
+                                <i class="bi bi-menu-button-wide-fill"></i>
+                            </a>
+                    </div>
                 </figure>
             </a>
 			<nav>
 				<section className="menu">
+                        
 					<h3>Opciones</h3>
 					<ul>
+                    
                         <li>
                             <a href="#">
                                 <i className="bi bi-building" style={{ fontSize: '1.2rem', color: 'cornflowerblue' }}></i>
