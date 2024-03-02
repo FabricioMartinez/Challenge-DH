@@ -370,24 +370,37 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 5em;
   }
+  
+  }
+  /*añadido por cris*/
+@media (max-width: 390px) {
+  .user-actions{
+    font-size: 12px;
 }
-
+/*añadido por cris*/
+.search-wrap{
+  padding: 0 1em;
+}
+}
 
 @media(min-width: 526px){
   .bi-menu-button-wide-fill{
      display: none; 
   }
-  
+  /*añadido por cris*/
+  .search-wrap{
+    padding: 0 1em;
+  }
 }
 
-@media(max-width: 440px){
+@media(max-width: 490px){
   .menu-wrap nav section{
     display: none;
   }
  
 }
 
-@media(max-width: 440px){
+@media(max-width: 490px){
   .dashboard {
     display: flex;
     flex-direction: column;
