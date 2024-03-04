@@ -7,7 +7,7 @@ import NotFound from './components/NotFound/NotFound'
 import {Switch, Route} from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+ //const [count, setCount] = useState(0)
 
   return (
     <>

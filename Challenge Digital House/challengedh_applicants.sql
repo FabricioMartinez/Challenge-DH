@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: recruitingrh
+-- Host: 127.0.0.1    Database: challengedh
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.4.28-MariaDB
 
@@ -37,7 +37,7 @@ CREATE TABLE `applicants` (
   PRIMARY KEY (`id`),
   KEY `profesionesId` (`professionsId`),
   CONSTRAINT `applicants_ibfk_1` FOREIGN KEY (`professionsId`) REFERENCES `professions` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,32 +46,8 @@ CREATE TABLE `applicants` (
 
 LOCK TABLES `applicants` WRITE;
 /*!40000 ALTER TABLE `applicants` DISABLE KEYS */;
-INSERT INTO `applicants` VALUES (7,44375841,'Gloria','Medina','glori.medi@gmail.com','388561248',' https://www.linkedin.com','2002-10-13','Femenino','foto1.jpg',9),(8,44375841,'Daniel','Fuentes','dani.mfu@gmail.com','388561248',' https://www.linkedin.com','2002-10-13','Masculino','foto2.jpg',6),(9,44375841,'Tim','Tim','Tim@gmail.com','388561248',' https://www.linkedin.com','2002-10-13','Femenino','foto3.jpg',3),(10,44375841,'Rocio','Carle','roci12@gmail.com','388561248',' https://www.linkedin.com','2002-10-13','Femenino','foto4.jpg',11),(11,44375841,'Victor','Fuentes','vi.fu@gmail.com','388561248',' https://www.linkedin.com','2002-10-13','Masculino','foto5.jpg',1),(12,44375841,'Luis','Fuentes','luis.fu@gmail.com','388561248',' https://www.linkedin.com','2002-10-13','Masculino','foto6.jpg',5);
+INSERT INTO `applicants` VALUES (1,44815634,'Fabricio','Martinez','fabri.martinez1645@gmail.com','3884764530',' https://www.linkedin.com/in/fabricio-jorge-martinez-1b06ab26b/','2003-06-16','Masculino','dasd321d13',1);
 /*!40000 ALTER TABLE `applicants` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `professions`
---
-
-DROP TABLE IF EXISTS `professions`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `professions` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `professions` varchar(200) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `professions`
---
-
-LOCK TABLES `professions` WRITE;
-/*!40000 ALTER TABLE `professions` DISABLE KEYS */;
-INSERT INTO `professions` VALUES (1,'Ingenieria Informatica'),(2,'Ingenieria en Sistema'),(3,'Ingenieria Quimica'),(4,'Ingenieria en Minas'),(5,'Ingenieria Civil'),(6,'Ingenieria Industrial'),(7,'Ingenieria en Cianecias Geologicas'),(8,'Ingenieria Arquitectura'),(9,'Medicina'),(10,'Economista'),(11,'Profesor'),(12,'Computista');
-/*!40000 ALTER TABLE `professions` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -83,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-01 15:31:58
+-- Dump completed on 2024-02-16 12:03:03

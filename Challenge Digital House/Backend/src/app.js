@@ -6,6 +6,9 @@ const apiProfessions = require('./Routes/professionsApiRoutes');
 const cors= require('cors');
 // URL encode
 app.use(express.urlencoded({ extended: false }));
+//
+// Aquí estoy disponiendo la posibilidad para utilizar el seteo en los formularios para el uso de los métodos put o delete
+//app.use(methodOverride('_method'));
 
 
 let corsOptions={
